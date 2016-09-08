@@ -15,9 +15,11 @@ ENV API_DIR /usr/src/app
 
 WORKDIR ${API_DIR}
 
-COPY package.json ${API_DIR}
-RUN npm install
 
 COPY . ${API_DIR}
+
+# This simulates gulp building the angular app, and putting it in .tmp/
+# This should be replaced by calling your build step, like `gulp build`
+COPY app ${API_DIR}/.tmp
 
 CMD [ "echo", "hello from dnd client" ]
