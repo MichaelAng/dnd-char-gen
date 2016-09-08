@@ -11,10 +11,42 @@ services:
 
   # api server
   api:
-    container_name: api
     build: ./api
+    container_name: api
+    depends_on:
+      - db
 
   # client container
   client:
     container_name: client
     build: ./client
+
+  # database
+  db:
+    container_name: db
+    image: mongo:3.0
+    ports:
+      - 27019:27019
+
+  # run this container to make a backup of mongodb's contents
+  # it will overwrite the backup inside of db/data/
+  backup-db:
+    command: /db/backup.sh
+    container_name: 'backup-db'
+    depends_on:
+      - db
+    image: mongo:3.0
+    volumes:
+      - ./db/:/db
+    # command: bash
+
+  # run this container to make a backup of mongodb's contents
+  # it will overwrite the backup inside of db/data/
+  restore-db:
+    command: /db/restore.sh
+    container_name: 'restore-db'
+    depends_on:
+      - db
+    image: mongo:3.0
+    volumes:
+      - ./db/:/db
