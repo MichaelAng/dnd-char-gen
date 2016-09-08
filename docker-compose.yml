@@ -30,6 +30,11 @@ services:
 
   # run this container to make a backup of mongodb's contents
   # it will overwrite the backup inside of db/data/
+  #
+  # use: docker-compose run --rm backup-db
+  #
+  # then: remember to `git add` and `git commit` the new database dump, give it a good message
+  #
   backup-db:
     command: /db/backup.sh
     container_name: 'backup-db'
@@ -37,11 +42,13 @@ services:
       - db
     image: mongo:3.0
     volumes:
-      - ./db/:/db
-    # command: bash
+      - ./db/:/db/
 
   # run this container to make a backup of mongodb's contents
   # it will overwrite the backup inside of db/data/
+  #
+  # use: docker-compose run --rm restore-db
+  #
   restore-db:
     command: /db/restore.sh
     container_name: 'restore-db'
@@ -49,4 +56,4 @@ services:
       - db
     image: mongo:3.0
     volumes:
-      - ./db/:/db
+      - ./db/:/db/
