@@ -20,6 +20,8 @@ services:
   client:
     container_name: client
     build: ./client
+    ports:
+      - "8080:8080"
 
   # database
   db:
