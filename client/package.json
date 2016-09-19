@@ -1,5 +1,5 @@
 {
-  "name": "dnd-char-gen client",
+  "name": "dnd-char-gen-client",
   "version": "0.0.1",
   "description": "Client version of the dnd-char-gen",
   "scripts": {
