@@ -1,6 +1,6 @@
 # Issue
 
-https://github.com/MichaelAng/dnd-char-gen/issues/
+PR #...
 
 # Description
 
@@ -23,3 +23,5 @@ $ run this command in your shell...
 3. Third step...
 
 # Help
+
+[wiki](https://github.com/MichaelAng/dnd-char-gen/wiki)
