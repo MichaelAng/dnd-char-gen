@@ -13,8 +13,9 @@ ENV API_DIR /usr/src/app
 WORKDIR ${API_DIR}
 
 COPY ./package.json ${API_DIR}
+COPY ./typings.json ${API_DIR}
 
-RUN [ "npm", "install", "--quiet"]
+RUN [ "npm", "install" ]
 
 COPY . ${API_DIR}
 
