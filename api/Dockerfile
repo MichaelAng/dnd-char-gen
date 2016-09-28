@@ -14,8 +14,10 @@ ENV API_DIR /usr/src/app
 WORKDIR ${API_DIR}
 
 COPY package.json ${API_DIR}
-RUN npm install
+RUN [ "npm", "install", "--quiet" ]
 
 COPY . ${API_DIR}
 
-CMD [ "node", "index.js" ]
+RUN [ "npm", "test" ]
+
+CMD [ "npm", "start" ]
