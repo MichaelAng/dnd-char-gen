@@ -9,9 +9,9 @@ module.exports = {
     // Seperates the application into chunks
     entry: {
         'polyfills': './src/polyfills.ts',
-        'vendor': './src/vendor.js',
-        'theme': './src/theme.js',
-        'app': './src/main.js',
+        'vendor': './src/vendor.ts',
+        'theme': './src/theme.ts',
+        'app': './src/main.ts',
     },
     output: {
         path: path.resolve('dist'), //Serves it out of distribution folder
@@ -37,12 +37,12 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                exclude: helpers.root('src', 'app'),
+                exclude: path.resolve('src', 'app'),
                 loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap')
             },
             {
                 test: /\.css$/,
-                include: helpers.root('src', 'app'),
+                include: path.resolve('src', 'app'),
                 loader: 'raw'
             },
             {
