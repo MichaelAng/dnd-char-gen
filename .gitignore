@@ -1,6 +1,11 @@
 .DS_Store
-node_modules
+
+# ignore unwanted node files
+node_modules/
 npm-debug.log
 
+# ignore typescript typings
 client/typings/**
 
+# ignore dist folder
+client/dist/
