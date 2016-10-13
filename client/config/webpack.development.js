@@ -1,7 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     // No idea what this does.
@@ -25,11 +25,25 @@ module.exports = {
         extensions: ['', '.js', '.ts']
     },
 
+    // Lints the typescript code
+    tslint: {
+      emitErrors: false,
+      failOnHint: false,
+      resourcePath: 'src'
+    },
+
     module: {
+        preLoaders: [
+            {
+                test: /\.ts$/,
+                loader: 'tslint'
+            }
+        ],
         loaders: [
             // Finds all typescripts files and loads up the angular files
             {
                 test: /\.ts$/,
+                exclude: [/\.(spec|e2e)\.ts$/],
                 loaders: ['awesome-typescript-loader', 'angular2-template-loader']
             },
             {
