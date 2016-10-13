@@ -27,6 +27,7 @@ module.exports = {
 
     module: {
         loaders: [
+            // Finds all typescripts files and loads up the angular files
             {
                 test: /\.ts$/,
                 loaders: ['awesome-typescript-loader', 'angular2-template-loader']
@@ -73,15 +74,15 @@ module.exports = {
     },
 
     plugins: [
-        // Seperates the application into chunks
+        // Seperates the application into chunks. It seems like name array order matters.
         new webpack.optimize.CommonsChunkPlugin({
-          name: ['polyfills', 'vendor', 'theme', 'app']
+            name: ['app', 'vendor', 'theme', 'polyfills']
         }),
         // Pulls the css into seperate bundles
         new ExtractTextPlugin('[name].css'),
         // Injects the bundles into the index.html
         new HtmlWebpackPlugin({
-          template: 'src/index.html'
+            template: 'src/index.html'
         })
     ]
 };
