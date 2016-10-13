@@ -8,4 +8,4 @@ npm-debug.log
 client/typings/**
 
 # ignore dist folder
-client/dist/
+dist/
