@@ -9,9 +9,6 @@ import { SpellListComponent }   from './spell-list.component';
     ],
     declarations: [
         SpellListComponent
-    ],
-    exports: [
-        SpellListComponent
     ]
 })
 export class SpellListModule { }
