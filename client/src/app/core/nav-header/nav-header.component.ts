@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
     styleUrls: ['./nav-header.component.css']
 })
 export class NavHeaderComponent {
-    title = 'Hello World';
+    isCollapse: boolean = true;
+
+    toggleCollapse() {
+        this.isCollapse = !this.isCollapse;
+    }
 }
