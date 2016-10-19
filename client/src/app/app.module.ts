@@ -4,15 +4,15 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent }         from './app.component';
 
-
 import { NavHeaderModule }      from './core/nav-header/nav-header.module';
-
+import { SpellListModule }      from './spell-list/spell-list.module';
 
 @NgModule({
     imports: [
         BrowserModule,
 
-        NavHeaderModule
+        NavHeaderModule,
+        SpellListModule
      ],
     declarations: [ AppComponent ],
     bootstrap: [ AppComponent ]
