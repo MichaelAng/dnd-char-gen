@@ -10,7 +10,6 @@ import { spells } from '../../../public/data/spells';
     styleUrls: ['./spell-list.component.css']
 })
 export class SpellListComponent implements OnInit {
-    title = 'Hello World';
     spells: Spell[];
 
     ngOnInit () {
