@@ -1,1 +1,12 @@
-I have a list of spells
+<div class="container-fluid">
+
+    <div class="panel panel-default" *ngFor="let spell of spells">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{ spell.name }}</h3>
+        </div>
+        <div class="panel-body">
+            {{ spell.description }}
+        </div>
+    </div>
+
+</div>
