@@ -1,21 +1,9 @@
-import { ModuleWithProviders }  from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
-// Core Modules
-import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
-
-// Feature Modules
-import { SpellListComponent } from './spell-list/spell-list.component';
+import { NgModule }     from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [{
-    path: 'spells',
-    component: SpellListComponent
-}, {
-    path: '404',
-    component: PageNotFoundComponent
-}, {
     path: '',
-    redirectTo: 'spells',
+    redirectTo: '/spells',
     pathMatch: 'full'
 }, {
     // Catch all for 404 pages
@@ -23,4 +11,12 @@ const appRoutes: Routes = [{
     redirectTo: '404'
 }];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+@NgModule({
+  imports: [
+    RouterModule.forRoot(appRoutes)
+  ],
+  exports: [
+    RouterModule
+  ]
+})
+export class AppRoutingModule {}
