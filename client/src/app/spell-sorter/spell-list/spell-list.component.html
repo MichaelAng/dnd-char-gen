@@ -1,1 +1,10 @@
 I have a list of spells
+<ul>
+    <li *ngFor="let spell of spells"
+        [class.selected]="isSelected(spell)"
+        (click)="onSelect(spell)">
+        <span class="badge">{{spell.id}}</span> {{spell.name}}
+    </li>
+</ul>
+
+<router-outlet></router-outlet>
