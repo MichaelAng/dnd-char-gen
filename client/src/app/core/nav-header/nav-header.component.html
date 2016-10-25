@@ -14,7 +14,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-collapse" [class.collapse]="isCollapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li routerLinkActive="active"><a routerLink="/spells">Spell List</a></li>
+                <li [routerLinkActive]="'active'"><a [routerLink]="['/spells']">Spell List</a></li>
+                <li [routerLinkActive]="'active'"><a [routerLink]="['/nowhere']">Nowhere</a></li>
             </ul>
         </div>
     </div>
