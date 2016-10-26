@@ -8,7 +8,7 @@ import { AppRoutingModule }     from './app-routing.module';
 import { CoreModule }      from './core/core.module';
 
 // Feature Modules
-import { SpellListModule }      from './spell-list/spell-list.module';
+import { SpellSorterModule }      from './spell-sorter/spell-sorter.module';
 
 // Shared Modules
 
@@ -17,7 +17,7 @@ import { SpellListModule }      from './spell-list/spell-list.module';
         BrowserModule,
 
         CoreModule,
-        SpellListModule,
+        SpellSorterModule,
 
         AppRoutingModule
      ],
