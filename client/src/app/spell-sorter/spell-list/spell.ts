@@ -1,4 +1,5 @@
 export class Spell {
+    id: number;
     castingTime: string;
     components: string;
     description: string;

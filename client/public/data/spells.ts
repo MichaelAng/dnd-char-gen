@@ -1,5 +1,6 @@
 export const spells = [
     {
+        id: 1,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -15,6 +16,7 @@ export const spells = [
         name: 'Spell 1'
     },
     {
+        id: 2,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -30,6 +32,7 @@ export const spells = [
         name: 'Spell 2'
     },
     {
+        id: 3,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -45,6 +48,7 @@ export const spells = [
         name: 'Spell 3'
     },
     {
+        id: 4,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -60,6 +64,7 @@ export const spells = [
         name: 'Spell 4'
     },
     {
+        id: 5,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -75,6 +80,7 @@ export const spells = [
         name: 'Spell 5'
     },
     {
+        id: 6,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -90,6 +96,7 @@ export const spells = [
         name: 'Spell 6'
     },
     {
+        id: 7,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -105,6 +112,7 @@ export const spells = [
         name: 'Spell 7'
     },
     {
+        id: 8,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -120,6 +128,7 @@ export const spells = [
         name: 'Spell 8'
     },
     {
+        id: 9,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -135,6 +144,7 @@ export const spells = [
         name: 'Spell 9'
     },
     {
+        id: 10,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -150,6 +160,7 @@ export const spells = [
         name: 'Spell 10'
     },
     {
+        id: 11,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -165,6 +176,7 @@ export const spells = [
         name: 'Spell 11'
     },
     {
+        id: 12,
         castingTime: '1 time',
         components: 'V, S',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been

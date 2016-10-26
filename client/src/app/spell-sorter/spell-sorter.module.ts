@@ -1,10 +1,9 @@
 import { CommonModule }         from '@angular/common';
 import { NgModule }             from '@angular/core';
 
-import { SpellSorterComponent } from './spell-sorter.component';
+import { SpellDetailComponent }   from './spell-detail/spell-detail.component';
 import { SpellListComponent }   from './spell-list/spell-list.component';
-
-
+import { SpellSorterComponent } from './spell-sorter.component';
 import { SpellSorterRoutingModule } from './spell-sorter-routing.module';
 
 @NgModule({
@@ -13,6 +12,7 @@ import { SpellSorterRoutingModule } from './spell-sorter-routing.module';
         SpellSorterRoutingModule
     ],
     declarations: [
+        SpellDetailComponent,
         SpellListComponent,
         SpellSorterComponent
     ]
