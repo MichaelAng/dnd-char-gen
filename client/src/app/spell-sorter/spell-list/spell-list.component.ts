@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Spell } from './spell';
 
-import { spells } from '../../../public/data/spells';
+import { spells } from '../../../../public/data/spells';
 
 @Component({
     selector: 'spell-list',
