@@ -1,5 +1,10 @@
 import { BrowserModule }        from '@angular/platform-browser';
 import { NgModule }             from '@angular/core';
+import { HttpModule }  from '@angular/http';
+
+
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './shared/in-memory-data.service';
 
 import { AppComponent }         from './app.component';
 import { AppRoutingModule }     from './app-routing.module';
@@ -15,6 +20,8 @@ import { SpellSorterModule }      from './spell-sorter/spell-sorter.module';
 @NgModule({
     imports: [
         BrowserModule,
+        HttpModule,
+        InMemoryWebApiModule.forRoot(InMemoryDataService),
 
         CoreModule,
         SpellSorterModule,
