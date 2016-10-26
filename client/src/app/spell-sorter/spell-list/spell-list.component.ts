@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { Spell } from './spell';
+import { Spell } from '../shared/spell.model';
 
 import { spells } from '../../../../public/data/spells';
 
