@@ -2,7 +2,7 @@ import { BrowserModule }        from '@angular/platform-browser';
 import { NgModule }             from '@angular/core';
 
 import { AppComponent }         from './app.component';
-import { routing }              from './app.routing';
+import { AppRoutingModule }     from './app-routing.module';
 
 // Core Modules
 import { NavHeaderModule }      from './core/nav-header/nav-header.module';
@@ -16,11 +16,12 @@ import { SpellListModule }      from './spell-list/spell-list.module';
 @NgModule({
     imports: [
         BrowserModule,
-        routing,
 
         NavHeaderModule,
         SpellListModule,
-        PageNotFoundModule
+        PageNotFoundModule,
+
+        AppRoutingModule
      ],
     declarations: [ AppComponent ],
     bootstrap: [ AppComponent ]
