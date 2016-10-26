@@ -2,10 +2,6 @@
 
 PR #...
 
-# Description
-
-I wrote some methods that ...
-
 # Changes
 
 - added some code to...
@@ -13,14 +9,11 @@ I wrote some methods that ...
 
 # Steps to test
 
-1. The first step...
-2. Second step here...
+1. run `npm start`
 
-    ```
-$ run this command in your shell...
-    ```
+*  run `npm test`
 
-3. Third step...
+- [ ] Verify all tests pass
 
 # Help
 
