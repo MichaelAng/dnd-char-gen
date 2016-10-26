@@ -2,25 +2,23 @@ import { BrowserModule }        from '@angular/platform-browser';
 import { NgModule }             from '@angular/core';
 
 import { AppComponent }         from './app.component';
-import { routing }              from './app.routing';
+import { AppRoutingModule }     from './app-routing.module';
 
 // Core Modules
-import { NavHeaderModule }      from './core/nav-header/nav-header.module';
-import { PageNotFoundModule }   from './core/page-not-found/page-not-found.module';
+import { CoreModule }      from './core/core.module';
 
 // Feature Modules
-import { SpellListModule }      from './spell-list/spell-list.module';
+import { SpellSorterModule }    from './spell-sorter/spell-sorter.module';
 
 // Shared Modules
 
 @NgModule({
     imports: [
         BrowserModule,
-        routing,
 
-        NavHeaderModule,
-        SpellListModule,
-        PageNotFoundModule
+        CoreModule,
+        SpellSorterModule,
+        AppRoutingModule
      ],
     declarations: [ AppComponent ],
     bootstrap: [ AppComponent ]
