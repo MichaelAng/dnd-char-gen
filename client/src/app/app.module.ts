@@ -5,8 +5,7 @@ import { AppComponent }         from './app.component';
 import { AppRoutingModule }     from './app-routing.module';
 
 // Core Modules
-import { NavHeaderModule }      from './core/nav-header/nav-header.module';
-import { PageNotFoundModule }   from './core/page-not-found/page-not-found.module';
+import { CoreModule }      from './core/core.module';
 
 // Feature Modules
 import { SpellListModule }      from './spell-list/spell-list.module';
@@ -17,9 +16,8 @@ import { SpellListModule }      from './spell-list/spell-list.module';
     imports: [
         BrowserModule,
 
-        NavHeaderModule,
+        CoreModule,
         SpellListModule,
-        PageNotFoundModule,
 
         AppRoutingModule
      ],
