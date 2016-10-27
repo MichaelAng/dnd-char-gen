@@ -7,8 +7,7 @@ import { SpellService } from '../shared/spell.service';
 @Component({
     selector: 'spell-list',
     templateUrl: './spell-list.component.html',
-    styleUrls: ['./spell-list.component.css'],
-    providers: [ SpellService ]
+    styleUrls: ['./spell-list.component.css']
 })
 export class SpellListComponent implements OnInit {
     errorMessage: string;

@@ -3,8 +3,7 @@ import { Http, Response } from '@angular/http';
 
 import { Observable } from 'rxjs/Observable';
 
-import { Spell }           from './spell.model';
-
+import { Spell } from './spell.model';
 
 @Injectable()
 export class SpellService {
@@ -17,6 +16,12 @@ export class SpellService {
             .map(this.extractData)
             .catch(this.handleError);
     }
+
+    getSpell(id: number): Observable<Spell> {
+        return this.getSpells()
+            .map(spells => spells.find(spell => spell.id === id));
+    }
+
 
     private extractData(res: Response) {
         let body = res.json();
