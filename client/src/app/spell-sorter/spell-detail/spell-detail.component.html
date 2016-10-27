@@ -1,1 +1,15 @@
-hello world {{id}}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{ spell.name }}</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-12 bg-success text-center">{{ spell.school }}</div>
+            <div class="col-xs-6 bg-info text-center">{{ spell.castingTime }}</div>
+            <div class="col-xs-6 bg-info text-center">{{ spell.range }}</div>
+            <div class="col-xs-6 bg-info text-center">{{ spell.components }}</div>
+            <div class="col-xs-6 bg-info text-center">{{ spell.duration }}</div>
+            <div class="col-xs-12 bg-success">{{ spell.description }}</div>
+        </div>
+    </div>
+</div>
