@@ -22,7 +22,6 @@ export class SpellService {
             .map(spells => spells.find(spell => spell.id === id));
     }
 
-
     private extractData(res: Response) {
         let body = res.json();
         return body.data || { };
